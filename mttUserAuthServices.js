@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const port = process.env.PORT || 3000
 
 // New app using express module
 const app = express();
@@ -24,6 +25,6 @@ app.post("/api", function(req, res) {
 	res.send();
 });
 
-app.listen(3000, function(){
+app.listen(port, function(){
 	console.log("Tony's test server is running on port 3000");
 });
