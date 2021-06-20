@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const port = process.env.port || 8080
-
+const port = process.env.PORT || '5000'
+//const host = '0.0.0.0';
 // New app using express module
 const app = express();
 
@@ -25,6 +25,8 @@ app.post("/api", function(req, res) {
 	res.send();
 });
 
-app.listen(port, function(){
-	console.log("My test server is running on port 3000");
+app.listen(port,function(){
+	console.log("My test server is running on port " + port);
 });
+
+ 
