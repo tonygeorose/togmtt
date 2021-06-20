@@ -26,5 +26,5 @@ app.post("/api", function(req, res) {
 });
 
 app.listen(port, function(){
-	console.log("Tony's test server is running on port 3000");
+	console.log("My test server is running on port 3000");
 });
